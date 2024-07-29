@@ -1,0 +1,12 @@
+# Shared shell non-login configuration
+
+# Common aliases
+alias ll='ls -lh'
+
+# Source custom configurations if they exist
+if [ -e "$HOME/.local/etc/sh/conf-activated" ]; then
+    for rc in "$HOME/.local/etc/sh/conf-activated"/*; do
+        [ -f "$rc" ] && . "$rc"
+    done
+fi
+

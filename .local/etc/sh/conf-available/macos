@@ -1,0 +1,3 @@
+# MacOS specific configuration
+eval $(/usr/libexec/path_helper -s)
+
