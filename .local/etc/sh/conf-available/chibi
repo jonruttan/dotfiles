@@ -1,0 +1,2 @@
+CHIBI=$(which chibi-scheme) || $(which chibi)
+alias repl="chibi-scheme -mchibi.repl -e'(repl)'"
